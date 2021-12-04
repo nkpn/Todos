@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.IconButton {
+  margin: 0;
+  border: none;
+  background-color: $main-bg-color;
+  fill: black;
+  font: inherit;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

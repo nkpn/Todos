@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+.Header {
+  float: left;
+  width: 22%;
+  height: 100%;
+  background-color: $header-bg-color;
+  padding: 40px 20px;
+
+  @media screen and (max-width: 720px) {
+    width: 35%;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 35%;
+  }
+}
+
+.HeaderHeading {
+  font-size: 30px;
+  // color: $hover-link-color;
+  color: $header-heading;
+  @media screen and (max-width: 720px) {
+    font-size: 24px;
+  }
+}
+
+nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.Link {
+  padding-left: 3px;
+  color: #bbbbbb;
+  font-size: 20px;
+  @media screen and (max-width: 720px) {
+    font-size: 16px;
+  }
+}
+
+.Link:hover {
+  background-color: $link-header-bg-color;
+  border-radius: 3px;
+}
+
+.LinkActive {
+}
