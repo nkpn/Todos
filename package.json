@@ -1,6 +1,7 @@
 {
-  "name": "Todos",
+  "name": "todos",
   "version": "0.1.0",
+  "homepage": ".",
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
     "@reduxjs/toolkit": "^1.6.1",

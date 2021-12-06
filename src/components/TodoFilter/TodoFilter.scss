@@ -2,6 +2,7 @@
 
 .TodoFilter {
   width: 500px;
+  font-family: $primary-font;
 
   @media screen and (max-width: $desktop) {
     width: 330px;
