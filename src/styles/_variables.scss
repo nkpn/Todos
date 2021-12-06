@@ -1,6 +1,7 @@
 $primary-font: 'Montserrat', sans-serif;
 
-$main-bg-color: #d3d5da;
+// $main-bg-color: #d3d5da;
+$main-bg-color: #f2f1f6;
 $header-bg-color: #1d1d1d;
 $link-header-bg-color: #393939;
 
@@ -15,3 +16,7 @@ $border-focus-color: #87d78b;
 $btn-color: #3c9c41;
 $btn-hover-color: #4db252;
 $btn-pressed-color: #318636;
+
+$desktop: 1280px;
+$tablet: 720px;
+$mobile: 320px;

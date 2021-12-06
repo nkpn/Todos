@@ -27,11 +27,11 @@ const Header = () => {
             Add new todo
           </NavLink>
         </nav>
-        <p style={{ marginTop: '200px', color: 'white' }}>
+        {/* <p style={{ marginTop: '200px', color: 'white' }}>
           - Исправь todo-selector для фильтра <br />- сделай фильтр
           <br /> - сделай изменение тудушки
           <br /> - логинизацию было бы неплохо ещё
-        </p>
+        </p> */}
       </header>
     </>
   );

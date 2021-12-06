@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.TodoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.TodoListItem {
+  font-family: $primary-font;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: none;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 98%;
+    height: 2px;
+
+    background-color: green;
+
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--completed::before {
+    transform: scaleX(1);
+  }
+}
+
+.Todo__Text {
+  font-size: 18px;
+  .TodoListItem--completed & {
+    text-decoration: line-through;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 16px;
+  }
+}
+
+.TodoCheckbox {
+  width: 25px;
+  height: 25px;
+  color: #000;
+}

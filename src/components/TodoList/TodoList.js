@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getVisibleTodos } from 'redux/todos/todos-selector';
 import todosActions from 'redux/todos/todos-actions';
-import style from './TodoList.module.scss';
+import './TodoList.scss';
 import Todo from 'components/Todo';
 
 const TodoList = () => {
@@ -15,7 +15,12 @@ const TodoList = () => {
     <>
       <ul className="TodoList">
         {todos.map(({ id, text, completed }) => (
-          <li key={id}>
+          <li
+            key={id}
+            className={`TodoListItem ${
+              completed ? 'TodoListItem--completed' : ''
+            }`}
+          >
             <Todo
               text={text}
               completed={completed}

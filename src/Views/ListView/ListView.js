@@ -5,6 +5,7 @@ import './ListView.scss';
 import Modal from 'components/Modal';
 import TodoEditor from 'components/TodoEditor/TodoEditor';
 import Container from 'components/Container';
+import TodoFilter from 'components/TodoFilter/TodoFilter';
 import IconButton from '../../components/IconButton/IconButton';
 import { ReactComponent as AddIcon } from '../../components/icons/plus.svg';
 
@@ -25,8 +26,8 @@ class ListView extends Component {
     return (
       <div className="ListViewContainer">
         <div className="HeaderContainer">
-          {' '}
           <h1 className="Heading">Task list:</h1>
+          <TodoFilter />
           <IconButton onClick={this.toggleModal} aria-label="Добавить todo">
             <AddIcon width="30" height="30" />
           </IconButton>
